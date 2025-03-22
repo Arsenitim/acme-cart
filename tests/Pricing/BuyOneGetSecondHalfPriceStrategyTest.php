@@ -6,7 +6,6 @@ use App\Pricing\PriceStrategy;
 use App\Pricing\PriceStrategyFactory;
 use PHPUnit\Framework\TestCase;
 use App\Product\Product;
-use App\Pricing\BuyOneGetSecondHalfPriceStrategy;
 
 class BuyOneGetSecondHalfPriceStrategyTest extends TestCase
 {

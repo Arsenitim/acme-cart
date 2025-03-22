@@ -2,12 +2,10 @@
 
 namespace Tests\Pricing;
 
-use App\Pricing\BuyOneGetSecondHalfPriceStrategy;
 use App\Pricing\PriceStrategy;
 use App\Pricing\PriceStrategyFactory;
 use PHPUnit\Framework\TestCase;
 use App\Product\Product;
-use App\Pricing\RegularPriceStrategy;
 
 class RegularPriceStrategyTest extends TestCase
 {

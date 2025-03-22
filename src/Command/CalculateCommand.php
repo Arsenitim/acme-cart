@@ -6,7 +6,6 @@ namespace App\Command;
 
 use App\Seeders\ProductCatalogueSeederExperiment;
 use App\Services\CartService;
-use App\Seeders\ProductCatalogueSeederRegular;
 use App\Services\ShippingCalculator;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
