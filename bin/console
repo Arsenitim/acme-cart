@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+if(php_sapi_name() !== 'cli') {
+    exit;
+}
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use App\Command\CalculateCommand;
+
+$application = new Application();
+$application->add(new CalculateCommand());
+$application->run();

@@ -1,0 +1,41 @@
+# Composer dependencies
+/vendor/
+
+# PHP build artifacts
+*.log
+*.cache
+*.lock
+*.phar
+
+# Environment files
+.env
+.env.*
+
+# PHPUnit test results
+.phpunit.result.cache
+coverage/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.sw?
+
+# Logs
+logs/
+*.log
+
+# Temporary or backup files
+*.bak
+*.tmp
+*.swp
+*~
+
+# PHAR build script output (optional)
+myapp.phar
+
+# Docker and other local env files (optional)
+docker-compose.override.yml
