@@ -6,10 +6,10 @@ class ShippingCalculator implements ShippingCalculatorInterface
 {
     // TODO: We should obviously use Database here.
     // But for the sake of this exercise - I'll just use hard-coded settings
-    private const FREE_SHIPPING_THRESHOLD = 90.00;
-    private const REDUCED_RATE_THRESHOLD = 50.00;
-    private const REDUCED_RATE = 2.95;
-    private const BASE_RATE = 4.95;
+    private const float FREE_SHIPPING_THRESHOLD = 90.00;
+    private const float REDUCED_RATE_THRESHOLD = 50.00;
+    private const float REDUCED_RATE = 2.95;
+    private const float BASE_RATE = 4.95;
 
     public function calculateShipping(float $subtotal): float
     {

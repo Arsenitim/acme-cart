@@ -8,11 +8,11 @@ use App\Seeders\ProductCatalogSeederInterface;
 class CartService
 {
     private array $items = [];
-    private array $productCatalogue = [];
+    private array $productCatalogue;
 
     public function __construct(
-        private ProductCatalogSeederInterface $productCatalogSeeder,
-        private ShippingCalculatorInterface $shippingCalculator
+        private readonly ProductCatalogSeederInterface $productCatalogSeeder,
+        private readonly ShippingCalculatorInterface $shippingCalculator
     ) {
         $this->productCatalogue = $this->productCatalogSeeder->seed();
     }
