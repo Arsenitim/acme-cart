@@ -10,7 +10,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use App\Services\CartService;
 use PHPUnit\Framework\TestCase;
 
-class CartTest extends TestCase
+class CartServiceTest extends TestCase
 {
     public static function productSetRegularProvider(): array
     {
