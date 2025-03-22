@@ -12,6 +12,7 @@ It's a pretty basic project structure.
 - The cart is implemented as "CartService" class.
 - There are two pricing strategies that can be specific to a product: "REGULAR" and "BUY_ONE_GET_SECOND_HALF_PRICE" (referred as "Experiment" in some names as the company is experimenting with that pricing).
 - The products are defined in "ProductCatalogueSeederExperiment" and "ProductCatalogueSeederRegular" to allow testing both strategies.
+- Just the seeders - no database - for simplicity
 - phpstan + phpcs are used to check the code
 
 
@@ -71,11 +72,14 @@ Total: $60.33
 
 
 **Rounding concern:**
+
 The task says: "R01, R01" should return  "\$54.37"
 I would consider changing it to \$54.38
-here is why:
+
+Here is why:
 R01 + R01 with "Get 2nd at 1/2 price" would cost:
 32.95+(32.95/2)+4.95=54.375
+
 Which I presume should be rounded to $54.38 unless there is a special policy to round down in some cases.
 
 Similarly for 98.27 vs 98.28
